@@ -17,6 +17,7 @@ public:
   double Kp;
   double Ki;
   double Kd;
+  bool firstPass;
 
   /*
   * Constructor
