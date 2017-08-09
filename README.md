@@ -3,6 +3,16 @@ Self-Driving Car Engineer Nanodegree Program
 
 ---
 
+## Reflection
+
+1. Describe the effect each of the P, I, D components had in your implementation.
+The proportial gain provided a quick response, but caused oscillations if it was too large. The integral gain was used to reduce steady state error. The derivative gain was use to dampen oscillations in the system.  
+
+
+2.Describe how the final hyperparameters were chosen.
+First, I tried just implenting a P controller and increased P until it was marginally stable. I then added damping (the d term) to reduce the oscillations and kept increasing d until settling time reached an acceptable level. Finally, I was the last term that I tuned and its purpose was to reduce steady state error. 
+
+
 ## Dependencies
 
 * cmake >= 3.5
